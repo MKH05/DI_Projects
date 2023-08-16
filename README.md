@@ -53,6 +53,17 @@ MKH05.github.io
 7. I programmering taler man om "variabel-scope", prøv at se om du kan finde svaret på hvad det betyder og om det betyder noget i din kode.
   - Variabel-scope er det område varibel er "synlig" men da største delen af mine variabler er i toppen uden for setup og draw, betyder det ikke så meget.
 
-### Opgave 3
-
 ## Forløb 3
+### Opgave
+1. Længden og bredden af en rektangel er henholdsvis 5 og 7. Skriv et program til at beregne arealet og omkredsen af ​​rektanglen.
+  -
+2. Skriv et program der beregner omkredsen og arealet af en retvinklet trekant.
+  -
+3. Skriv et program der tager modulus 10 af frameCount og udskriver frameCount og resultatet. Hvordan fungerer modulus?
+  -
+4. Skriv et program der tager division 100 af frameCount og udskriver frameCount og resultatet. Hvordan fungerer division i dette tilfælde?
+  -
+5. Løs nu de ovenstående spørgsmål ved hjælp af tildelingsoperatorer (f.eks. +=, -=, *=)
+  -
+6. Kan du lave et program der bevæger en firkant hen over skærmen som en “trappefunktion” uden brug af if-statements, men kun ved brug af modulus og division af frameCount!
+  -
