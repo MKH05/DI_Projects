@@ -1,4 +1,4 @@
-# School Project: The Creature
+# Logbog MKH
 
 ## Forløb 1
 **Afleverings opgave:** The creature
@@ -14,6 +14,8 @@ Opgaven skal laves af højest to personer. I skal aflevere "koden" og en "video"
 
 **Frivilligt:**
 - Prøv at få "væsnet" til f.eks. at "bounce" eller bevæge sig længere væk, så der simuleres en rummelig dimension.
+
+**Fil:**
 
 ## Forløb 2
 
