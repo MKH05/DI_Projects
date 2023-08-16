@@ -4,7 +4,7 @@
 **Afleverings opgave:** The creature
 
 **Afleveringen:**
-Opgaven skal laves af højest to personer. I skal aflevere "koden" og en "video" hvor I forklarer koden og anvender rigtige fagord.
+- Opgaven skal laves af højest to personer. I skal aflevere "koden" og en "video" hvor I forklarer koden og anvender rigtige fagord.
 
 **Krav:**
 - Tegn et "væsen" vha. de indbyggede 2D tegnefunktioner.
@@ -16,6 +16,7 @@ Opgaven skal laves af højest to personer. I skal aflevere "koden" og en "video"
 - Prøv at få "væsnet" til f.eks. at "bounce" eller bevæge sig længere væk, så der simuleres en rummelig dimension.
 
 **Fil:**
+https://github.com/MKH05/MKH05.github.io/blob/main/Creature.zip
 
 ## Forløb 2
 
