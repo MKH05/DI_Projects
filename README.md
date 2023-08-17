@@ -16,7 +16,7 @@
 - Prøv at få "væsnet" til f.eks. at "bounce" eller bevæge sig længere væk, så der simuleres en rummelig dimension.
 
 **Fil:**
-https://github.com/MKH05/MKH05.github.io/blob/main/Creature.zip
+https://github.com/MKH05/MKH05.github.io/tree/main/Creature
 
 ## Forløb 2
 
