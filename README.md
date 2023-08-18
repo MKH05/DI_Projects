@@ -31,7 +31,7 @@ MKH05.github.io
   - String (tekststreng)
   - Boolean (sandt/falsk)
   - Array (en samling af værdier)
-  - Object (et objekt med egenskaber og metoder)
+  - Object (et objekt med egenskaber)
   - Char (enkelt tegn)
 3. Hvordan opretter man en variabel?
   - datatype variabelNavn = værdi;
@@ -44,7 +44,7 @@ MKH05.github.io
   - Boolean brugte jeg til at holde styr på om spilleren / brugeren holdte hhv. w,a,s,d nede.
   - Array blev brugt til at "holde" de 8 frames til min monster animation.
 5. Hvad betyder "parametre" og "argumenter" i programmering, og hvornår anvender du dem i din kode?
-  - parametre er værdier, der sendes til en funktion, og rgumenter er de faktiske værdier, der sendes som input til parametrene.
+  - parametre er værdier, der sendes til en funktion, og argumenter er de faktiske værdier, der sendes som input til parametrene.
   - void printmsg(String msg){print(msg);}
   - printmsg("Besked");
 6. Hvor har du brugt curly brackets (krølleparanteser) i din kode, og hvilken betydning har de?
@@ -56,13 +56,19 @@ MKH05.github.io
 ## Forløb 3
 ### Opgave
 1. Længden og bredden af en rektangel er henholdsvis 5 og 7. Skriv et program til at beregne arealet og omkredsen af ​​rektanglen.
-  -
+  - int x = 5;
+  - int y = 7;
+
+  - float areal = x*y;
+  - float omkreds = 2x*2y;
+  - println("Areal= " + areal);
+  - println("Omkreds= " + omkreds);
 2. Skriv et program der beregner omkredsen og arealet af en retvinklet trekant.
   -
 3. Skriv et program der tager modulus 10 af frameCount og udskriver frameCount og resultatet. Hvordan fungerer modulus?
-  -
+   - println(framecount%10);
 4. Skriv et program der tager division 100 af frameCount og udskriver frameCount og resultatet. Hvordan fungerer division i dette tilfælde?
-  -
+  - println(framecount/100);
 5. Løs nu de ovenstående spørgsmål ved hjælp af tildelingsoperatorer (f.eks. +=, -=, *=)
   -
 6. Kan du lave et program der bevæger en firkant hen over skærmen som en “trappefunktion” uden brug af if-statements, men kun ved brug af modulus og division af frameCount!
