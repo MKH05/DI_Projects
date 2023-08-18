@@ -58,18 +58,38 @@ MKH05.github.io
 1. Længden og bredden af en rektangel er henholdsvis 5 og 7. Skriv et program til at beregne arealet og omkredsen af ​​rektanglen.
   - int x = 5;
   - int y = 7;
-
+  - //
   - float areal = x*y;
   - float omkreds = 2x*2y;
   - println("Areal= " + areal);
   - println("Omkreds= " + omkreds);
 2. Skriv et program der beregner omkredsen og arealet af en retvinklet trekant.
-  -
+  - int x1t = 100;
+  - int y1t = 200;
+  - int x2t = 200;
+  - int y2t = 200;
+  - int x3t = 200;
+  - int y3t = 100;
+  - //
+  - float kat1 = sqrt((x2t - x1t) * (x2t-x1t) + (y2t - y1t) * (y2t - y1t));
+  - float kat2 = sqrt((x3t - x2t) * (x3t - x2t) + (y3t - y2t) * (y3t - y2t));
+  - float arealT = (kat1 * kat2)/2;
+  - //
+  - float hypT = sqrt(kat1 * kat1 + kat2 * kat2);
+  - float omkredsT = kat1 + kat2 + hypt;
+  - //
+  - println("omkredsen af trekanten er " + tomkreds);
+  - println("arealet af trekanten er " + tareal);
 3. Skriv et program der tager modulus 10 af frameCount og udskriver frameCount og resultatet. Hvordan fungerer modulus?
    - println(framecount%10);
 4. Skriv et program der tager division 100 af frameCount og udskriver frameCount og resultatet. Hvordan fungerer division i dette tilfælde?
   - println(framecount/100);
 5. Løs nu de ovenstående spørgsmål ved hjælp af tildelingsoperatorer (f.eks. +=, -=, *=)
-  -
+  - 
 6. Kan du lave et program der bevæger en firkant hen over skærmen som en “trappefunktion” uden brug af if-statements, men kun ved brug af modulus og division af frameCount!
-  -
+  - fill(0,10);
+  - rect(0,0,900,500);
+  - //
+  - fill(255);
+  - circle(x,y,10);
+  - circle(frameCount % width, height/2,10);
