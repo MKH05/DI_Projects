@@ -19,7 +19,6 @@
 https://github.com/MKH05/MKH05.github.io/tree/main/Creature
 
 ## Forløb 2
-
 ### Opgave 1: Opret jeres logbog
 MKH05.github.io
 ### Opgave 2: Spørgsmål til walking creature
@@ -93,3 +92,7 @@ MKH05.github.io
   - fill(255);
   - circle(x,y,10);
   - circle(frameCount % width, height/2,10);
+## Forløb 4
+### Kvadrant-opgaven
+
+### Kompas-opgaven
