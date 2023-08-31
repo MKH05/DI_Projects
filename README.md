@@ -96,3 +96,6 @@ MKH05.github.io
 ### Kvadrant-opgaven
 
 ### Kompas-opgaven
+
+## Afleveringsopgave 2
+https://github.com/MKH05/MKH05.github.io/tree/main/BallGame
