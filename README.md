@@ -97,5 +97,44 @@ MKH05.github.io
 
 ### Kompas-opgaven
 
-## Afleveringsopgave 2
+## Forløb 5 Afleveringsopgave 2
 https://github.com/MKH05/MKH05.github.io/tree/main/BallGame
+
+## Forløb 6
+### Opgaver
+1. Skriv en for og while-løkke, der udskriver tal fra 1 til 10.
+  - for (int i = 1; i <= 10; i++ ){
+  -   println(i);
+  - }
+2. Lav en for og while-løkke, der udskriver de første 5 lige tal (2, 4, 6, osv.).
+  - for (int i = 0; i <= 10; i+=2 ){
+  -   println(i);
+  - }
+3. Lav en for og while-løkke, der udskriver summen af tal fra 1 til 100.
+  - for (int i = 1, sum = 0; i <= 100; i++ ){
+  -   sum += i;
+  -   println(sum);
+  -   delay(100);
+  - } 
+4. Skriv en for og while-løkke, der tæller ned fra 10 til 1 og udskriver tallene.
+  - for (int i = 10; i > 0; i-- ){
+  -   println(i);
+  - }
+5. Lav en for og while-løkke, der udskriver gangetabellen for tallet 5 (5, 10, 15, osv. op til 50).
+  - int i = 0;
+  - while (i < 50){
+  -   i+= 5;
+  -   println(i);
+  -   delay(100);
+  - } 
+6. Lav en for og while-løkke, der udskriver de første 5 potenser af 2 (2^1, 2^2, 2^3, osv.).
+  - for (int i = 0; i <= 5; i+=2 ){
+  -   println(pow(2,i));
+  - }
+7. Tegn en for og serie af lodrette linjer ved hjælp af en while-løkke, der ændrer deres x-koordinat for hver gentagelse.
+
+8. Skriv en for og while-løkke, der tegner en spiral ved at ændre både x- og y-koordinaterne for hver gentagelse.
+
+9. Lav en for og while-løkke, der tegner en regnbue af farverige linjer ved at ændre farverne gradvist for hver gentagelse.
+
+10. Tegn en for og slags “trappe” ved at bruge en while-løkke til at skabe forskellige brede rektangler ved hvert trin.
