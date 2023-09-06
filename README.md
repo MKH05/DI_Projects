@@ -1,4 +1,3 @@
-```markdown
 # Logbog MKH
 
 ## Forløb 1
@@ -180,5 +179,3 @@ Tegn et skakbræt: Brug to nestede for-loops til at tegne et skakbræt med rækk
 
 ### Opgave 3
 Tegn en trappe: Byg en trappe: Brug to for-loops, hvor det ene er indlejret i det andet, til at tegne en trappe, bestående af små firkanter. Hver trin skal være bredere end det foregående.
-
-```
