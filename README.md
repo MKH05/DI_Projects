@@ -16,7 +16,7 @@
 - Prøv at få "væsnet" til f.eks. at "bounce" eller bevæge sig længere væk, så der simuleres en rummelig dimension.
 
 **Fil:**
-https://github.com/MKH05/MKH05.github.io/tree/main/Creature
+[GitHub Repository](https://github.com/MKH05/MKH05.github.io/tree/main/Creature)
 
 ## Forløb 2
 ### Opgave 1: Opret jeres logbog
@@ -44,8 +44,13 @@ MKH05.github.io
   - Array blev brugt til at "holde" de 8 frames til min monster animation.
 5. Hvad betyder "parametre" og "argumenter" i programmering, og hvornår anvender du dem i din kode?
   - parametre er værdier, der sendes til en funktion, og argumenter er de faktiske værdier, der sendes som input til parametrene.
-  - void printmsg(String msg){print(msg);}
-  - printmsg("Besked");
+```java
+  void printmsg(String msg){
+    print(msg);
+  }
+  
+  printmsg("Besked");
+```
 6. Hvor har du brugt curly brackets (krølleparanteser) i din kode, og hvilken betydning har de?
   - Jeg brugte curly brackets til "if else" statements, for, while statements og min updateanimation funktion.
   - De bruges til at gruppere kode sammen.
@@ -55,82 +60,111 @@ MKH05.github.io
 ## Forløb 3
 ### Opgave
 1. Længden og bredden af en rektangel er henholdsvis 5 og 7. Skriv et program til at beregne arealet og omkredsen af ​​rektanglen.
-  - int x = 5;
-  - int y = 7;
-  - //
-  - float areal = x*y;
-  - float omkreds = 2x*2y;
-  - println("Areal= " + areal);
-  - println("Omkreds= " + omkreds);
-2. Skriv et program der beregner omkredsen og arealet af en retvinklet trekant.
-  - int x1t = 100;
-  - int y1t = 200;
-  - int x2t = 200;
-  - int y2t = 200;
-  - int x3t = 200;
-  - int y3t = 100;
-  - //
-  - float kat1 = sqrt((x2t - x1t) * (x2t-x1t) + (y2t - y1t) * (y2t - y1t));
-  - float kat2 = sqrt((x3t - x2t) * (x3t - x2t) + (y3t - y2t) * (y3t - y2t));
-  - float arealT = (kat1 * kat2)/2;
-  - //
-  - float hypT = sqrt(kat1 * kat1 + kat2 * kat2);
-  - float omkredsT = kat1 + kat2 + hypt;
-  - //
-  - println("omkredsen af trekanten er " + tomkreds);
-  - println("arealet af trekanten er " + tareal);
+  ```java 
+  int x = 5;
+  int y = 7;
+
+  float areal = x * y;
+  float omkreds = 2 * (x + y);
+
+  println("Areal= " + areal);
+  println("Omkreds= " + omkreds);
+  ```
+  2. Skriv et program der beregner omkredsen og arealet af en retvinklet trekant.
+  ```java
+  int x1t = 100;
+  int y1t = 200;
+  int x2t = 200;
+  int y2t = 200;
+  int x3t = 200;
+  int y3t = 100;
+
+  float kat1 = sqrt((x2t - x1t) * (x2t - x1t) + (y2t - y1t) * (y2t - y1t));
+  float kat2 = sqrt((x3t - x2t) * (x3t - x2t) + (y3t - y2t) * (y3t - y2t));
+  float arealT = (kat1 * kat2) / 2;
+
+  float hypT = sqrt(kat1 * kat1 + kat2 * kat2);
+  float omkredsT = kat1 + kat2 + hypT;
+
+  println("omkredsen af trekanten er " + omkredsT);
+  println("arealet af trekanten er " + arealT);
+  ```
 3. Skriv et program der tager modulus 10 af frameCount og udskriver frameCount og resultatet. Hvordan fungerer modulus?
-   - println(framecount%10);
+  ```java 
+  println(framecount%10);
+  ```
 4. Skriv et program der tager division 100 af frameCount og udskriver frameCount og resultatet. Hvordan fungerer division i dette tilfælde?
-  - println(framecount/100);
+  ```java 
+  println(framecount/100);
+  ```
 5. Løs nu de ovenstående spørgsmål ved hjælp af tildelingsoperatorer (f.eks. +=, -=, *=)
   - 
 6. Kan du lave et program der bevæger en firkant hen over skærmen som en “trappefunktion” uden brug af if-statements, men kun ved brug af modulus og division af frameCount!
-  - fill(0,10);
-  - rect(0,0,900,500);
-  - //
-  - fill(255);
-  - circle(x,y,10);
-  - circle(frameCount % width, height/2,10);
+  ```java 
+  fill(0, 10);
+  rect(0, 0, 900, 500);
+
+  fill(255);
+  circle(x, y, 10);
+  circle(frameCount % width, height/2, 10);
+  ```
 ## Forløb 4
 ### Kvadrant-opgaven
 
 ### Kompas-opgaven
 
 ## Forløb 5 Afleveringsopgave 2
-https://github.com/MKH05/MKH05.github.io/tree/main/BallGame
+[GitHub Repository](https://github.com/MKH05/MKH05.github.io/tree/main/BallGame)
 
 ## Forløb 6
 ### Opgaver
 1. Skriv en for og while-løkke, der udskriver tal fra 1 til 10.
-  - for (int i = 1; i <= 10; i++ ){
-  -   println(i);
-  - }
+  ```java 
+  for (int i = 1; i <= 10; i++ ){
+    println(i);
+  }
+  ```
 2. Lav en for og while-løkke, der udskriver de første 5 lige tal (2, 4, 6, osv.).
-  - for (int i = 0; i <= 10; i+=2 ){
-  -   println(i);
-  - }
+  ```java
+  for (int i = 2; i <= 10; i+=2 ){
+    println(i);
+  }
+
+  ```
 3. Lav en for og while-løkke, der udskriver summen af tal fra 1 til 100.
-  - for (int i = 1, sum = 0; i <= 100; i++ ){
-  -   sum += i;
-  -   println(sum);
-  -   delay(100);
-  - } 
+  ```java
+  for (int i = 1, sum = 0; i <= 100; i++ ){
+    sum += i;
+    println(sum);
+    delay(100);
+  }
+
+  ```
 4. Skriv en for og while-løkke, der tæller ned fra 10 til 1 og udskriver tallene.
-  - for (int i = 10; i > 0; i-- ){
-  -   println(i);
-  - }
+  ```java
+  for (int i = 10; i > 0; i-- ){
+    println(i);
+  }
+
+  ```
 5. Lav en for og while-løkke, der udskriver gangetabellen for tallet 5 (5, 10, 15, osv. op til 50).
-  - int i = 0;
-  - while (i < 50){
-  -   i+= 5;
-  -   println(i);
-  -   delay(100);
-  - } 
+  ```java
+  int i = 0;
+
+  while (i < 50){
+    i += 5;
+    println(i);
+    delay(100);
+  }
+
+  ```
 6. Lav en for og while-løkke, der udskriver de første 5 potenser af 2 (2^1, 2^2, 2^3, osv.).
-  - for (int i = 0; i <= 5; i+=2 ){
-  -   println(pow(2,i));
-  - }
+  ```java
+  for (int i = 1; i <= 5; i++ ){
+    println(pow(2, i));
+  }
+
+  ```
 7. Tegn en for og serie af lodrette linjer ved hjælp af en while-løkke, der ændrer deres x-koordinat for hver gentagelse.
 
 8. Skriv en for og while-løkke, der tegner en spiral ved at ændre både x- og y-koordinaterne for hver gentagelse.
