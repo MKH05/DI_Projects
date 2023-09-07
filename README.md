@@ -113,7 +113,10 @@
 
 ### Kompas-opgaven
 
-## Forløb 5 Afleveringsopgave 2
+## Forløb 5 
+### Afleveringsopgave 2
+I denne aflevering skal I udvikle et lille spil ved navn BounceGame. Formålet med spillet er simpelt: I skal placere to “mure” i form af et kryds ved hjælp af musseklik. En hvid bold bevæger sig konstant rundt på skærmen med en konstant hastighed og reflekteres både af vindueskanterne og de to krydsmure. Derudover placeres en rød bold tilfældigt et sted på skærmen og forbliver der, indtil den hvide bold rammer den. Udfordringen er at se, hvor hurtigt I kan ramme den røde bold. God fornøjelse med kodning og spiludvikling :-)
+
 **Fil:**
 [BallGame](https://github.com/MKH05/MKH05.github.io/tree/main/BallGame)
 
@@ -222,3 +225,13 @@ void setup() {
 
 ### Opgave 3
 Tegn en trappe: Byg en trappe: Brug to for-loops, hvor det ene er indlejret i det andet, til at tegne en trappe, bestående af små firkanter. Hver trin skal være bredere end det foregående.
+
+## Forløb 8
+### Afleveringsopgave 3
+I denne opgave skal I opbygge en pyramide ved hjælp af et for-loop inde i et andet for-loop. Pyramiden vil bestå af små firkanter, og bredden øges kun med en firkant i hver kant for hver ny række. Dette betyder, at det øverste niveau kun har 1 firkant, derefter 3 firkanter, 5 firkanter, 7 firkanter, og så videre. Desuden skal firkanterne gradvist blive mørkere for hver række.
+Det er vigtigt at bemærke, at I kun må bruge de variabler, der er defineret i de to for-loops for at løse denne opgave.
+
+Hvis I søger en ekstra udfordring, kan I prøve at opbygge en pyramide, hvor hver firkant er roteret med en tilfældig vinkel.
+
+**Fil:**
+[Pyramide](https://github.com/MKH05/MKH05.github.io/tree/main/Creature)
