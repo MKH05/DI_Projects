@@ -162,7 +162,19 @@
    }
    ```
 7. Tegn en for og serie af lodrette linjer ved hjælp af en while-løkke, der ændrer deres x-koordinat for hver gentagelse.
+   ```java
+   void setup() {
+     size(400, 400);
+     background(255);
+     stroke(0);
+     int x = 50;
 
+     while (x < width - 50) {
+       line(x, 50, x, height - 50);
+       x += 20;
+     }
+   }
+```
 8. Skriv en for og while-løkke, der tegner en spiral ved at ændre både x- og y-koordinaterne for hver gentagelse.
 
 9. Lav en for og while-løkke, der tegner en regnbue af farverige linjer ved at ændre farverne gradvist for hver gentagelse.
@@ -174,9 +186,39 @@ Nestede for-loops i Processing er en teknik, hvor vi bruger en eller flere for-l
 
 ### Opgave 1
 Lav et mønster med cirkler: Brug en for-løkke til at tegne flere rækker af cirkler. Inde i hver række skal du bruge et indlejret for-loop til at placere cirklerne i en linje.
+```java
+void setup() {
+  size(400, 400);
+  noFill();
+  float circleSize = 20;
+
+  for (int i = 0; i < 10; i++) {
+    for (int f = 0; f < 10; f++) {
+      ellipse(20 + f * 40, 20 + i * 40, circleSize, circleSize);
+    }
+  }
+}
+```
 
 ### Opgave 2
 Tegn et skakbræt: Brug to nestede for-loops til at tegne et skakbræt med rækker og kolonner af firkantede celler. Skift farve mellem sorte og hvide celler. (svær udfordring : du kan prøve at se om du kan tegene samme mønster med kun et for-loop ved anvendelse af “%” og “/”)
+```java
+void setup() {
+  size(400, 400);
+  int cellSize = 40;
+  
+  for (int i = 0; i < 8; i++) {
+    for (int f = 0; f < 8; f++) {
+      if ((i + f) % 2 == 0) {
+        fill(255); // Hvid
+      } else {
+        fill(0);   // Sort
+      }
+      rect(i * cellSize, f * cellSize, cellSize, cellSize);
+    }
+  }
+}
+```
 
 ### Opgave 3
 Tegn en trappe: Byg en trappe: Brug to for-loops, hvor det ene er indlejret i det andet, til at tegne en trappe, bestående af små firkanter. Hver trin skal være bredere end det foregående.
