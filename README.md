@@ -225,6 +225,29 @@ void setup() {
 
 ### Opgave 3
 Tegn en trappe: Byg en trappe: Brug to for-loops, hvor det ene er indlejret i det andet, til at tegne en trappe, bestående af små firkanter. Hver trin skal være bredere end det foregående.
+```java
+void setup() {
+  size(500, 500);
+  background(0);
+  noStroke();
+}
+
+void draw(){
+  background(0);
+  
+  for (int i = 0; i <= 40; i++ ){
+    float yOffset = i * 12;
+    
+    for (int f = 0; f <= i; f++ ){
+      float xOffset = f * 12;
+      
+      fill(255 - i * 6);
+      
+      rect(xOffset, yOffset,10,10);
+    }
+  }
+}
+```
 
 ## Forløb 8
 ### Afleveringsopgave 3
