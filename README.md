@@ -257,4 +257,4 @@ Det er vigtigt at bemærke, at I kun må bruge de variabler, der er defineret i 
 Hvis I søger en ekstra udfordring, kan I prøve at opbygge en pyramide, hvor hver firkant er roteret med en tilfældig vinkel.
 
 **Fil:**
-[Pyramide](https://github.com/MKH05/MKH05.github.io/tree/main/Creature)
+[Pyramide](https://github.com/MKH05/MKH05.github.io/tree/main/Pyramid)
