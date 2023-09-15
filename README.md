@@ -258,3 +258,87 @@ Hvis I søger en ekstra udfordring, kan I prøve at opbygge en pyramide, hvor hv
 
 **Fil:**
 [Pyramide](https://github.com/MKH05/MKH05.github.io/tree/main/Pyramid)
+
+## Forløb 9
+1. Opret et array af heltal med 5 elementer og tildel det værdierne 1, 2, 3, 4 og 5. Udskriv arrayet.
+```java 
+int[] list = {1,2,3,4,5};
+```
+2. Lav et array af strenge, der indeholder navnene på dine yndlingsfarver. Udskriv alle farverne i arrayet.
+```java 
+String[] yndlingsfarver = {"Blå", "Lilla", "Hvid"};
+
+void setup() {
+  for (int i = 0; i < yndlingsfarver.length; i++) {
+    String farve = yndlingsfarver[i];
+    println(farve);
+  }
+}
+```
+3. Opret et array af kommatal, der indeholder temperaturen for hver dag i en uge. Beregn gennemsnittet af temperaturerne.
+```java 
+float[] temp = {21.2,19.2,15.5,30.7};
+
+float sum = 0;
+
+for(float tal : temp){
+  sum = sum + tal;
+}
+
+float gennemsnit = sum/temp.length;
+
+println(gennemsnit);
+```
+4. Lav et array af boolean-værdier, der repræsenterer tilstanden af ​​10 lamper (tændt/slukket). Skriv en løkke, der tænder alle lamperne. (prøv at se om du kan gøre det grafisk)
+
+5. Byt om på det første og sidste element i et array. (uanset indhold)
+```java
+void setup() {
+  int[] array = {1, 2, 3, 4, 5};
+  
+  if (array.length >= 2) {
+    int temp = array[0];
+    array[0] = array[array.length - 1];
+    array[array.length - 1] = temp;
+  }
+  
+  for (int i = 0; i < array.length; i++) {
+    println(array[i]);
+  }
+}
+```
+6. Opret et array af strenge med navnene på forskellige frugter. Brug en for-løkke til at finde og udskrive indekset (positionen) for den første forekomst af “æble” i arrayet.
+```java
+void setup() {
+  String[] frugter = {"banan", "æble", "pære", "kirsebær", "æble"};
+  int førsteÆbleIndex = -1;
+  
+  for (int i = 0; i < frugter.length; i++) {
+    if (frugter[i].equals("æble")) {
+      førsteÆbleIndex = i;
+      break;
+    }
+  }
+  
+  println("Indekset for første forekomst af 'æble' er: " + førsteÆbleIndex);
+}
+
+```
+
+7. Opret et array af strenge med navnene på månederne i den korrekte rækkefølge (januar, februar, marts, osv.). Skriv en for-løkke, der bytter om på rækkefølgen, så arrayet nu indeholder månederne i omvendt rækkefølge (december, november, oktober, osv.).
+```java
+void setup() {
+  String[] måneder = {"januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"};
+  
+  for (int i = 0; i < måneder.length / 2; i++) {
+    String temp = måneder[i];
+    måneder[i] = måneder[måneder.length - 1 - i];
+    måneder[måneder.length - 1 - i] = temp;
+  }
+  
+  for (int i = 0; i < måneder.length; i++) {
+    println(måneder[i]);
+  }
+}
+
+```
