@@ -177,7 +177,7 @@ I denne aflevering skal I udvikle et lille spil ved navn BounceGame. Formålet m
        x += 20;
      }
    }
-```
+   ```
 8. Skriv en for og while-løkke, der tegner en spiral ved at ændre både x- og y-koordinaterne for hver gentagelse.
 
 9. Lav en for og while-løkke, der tegner en regnbue af farverige linjer ved at ændre farverne gradvist for hver gentagelse.
@@ -261,10 +261,13 @@ Hvis I søger en ekstra udfordring, kan I prøve at opbygge en pyramide, hvor hv
 
 ## Forløb 9
 1. Opret et array af heltal med 5 elementer og tildel det værdierne 1, 2, 3, 4 og 5. Udskriv arrayet.
+
 ```java 
 int[] list = {1,2,3,4,5};
 ```
+
 2. Lav et array af strenge, der indeholder navnene på dine yndlingsfarver. Udskriv alle farverne i arrayet.
+
 ```java 
 String[] yndlingsfarver = {"Blå", "Lilla", "Hvid"};
 
@@ -275,7 +278,9 @@ void setup() {
   }
 }
 ```
+
 3. Opret et array af kommatal, der indeholder temperaturen for hver dag i en uge. Beregn gennemsnittet af temperaturerne.
+
 ```java 
 float[] temp = {21.2,19.2,15.5,30.7};
 
@@ -289,6 +294,7 @@ float gennemsnit = sum/temp.length;
 
 println(gennemsnit);
 ```
+
 4. Lav et array af boolean-værdier, der repræsenterer tilstanden af ​​10 lamper (tændt/slukket). Skriv en løkke, der tænder alle lamperne. (prøv at se om du kan gøre det grafisk)
 
 5. Byt om på det første og sidste element i et array. (uanset indhold)
