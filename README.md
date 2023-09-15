@@ -292,6 +292,7 @@ println(gennemsnit);
 4. Lav et array af boolean-værdier, der repræsenterer tilstanden af ​​10 lamper (tændt/slukket). Skriv en løkke, der tænder alle lamperne. (prøv at se om du kan gøre det grafisk)
 
 5. Byt om på det første og sidste element i et array. (uanset indhold)
+   
 ```java
 void setup() {
   int[] array = {1, 2, 3, 4, 5};
@@ -308,6 +309,7 @@ void setup() {
 }
 ```
 6. Opret et array af strenge med navnene på forskellige frugter. Brug en for-løkke til at finde og udskrive indekset (positionen) for den første forekomst af “æble” i arrayet.
+   
 ```java
 void setup() {
   String[] frugter = {"banan", "æble", "pære", "kirsebær", "æble"};
@@ -326,6 +328,7 @@ void setup() {
 ```
 
 7. Opret et array af strenge med navnene på månederne i den korrekte rækkefølge (januar, februar, marts, osv.). Skriv en for-løkke, der bytter om på rækkefølgen, så arrayet nu indeholder månederne i omvendt rækkefølge (december, november, oktober, osv.).
+   
 ```java
 void setup() {
   String[] måneder = {"januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"};
