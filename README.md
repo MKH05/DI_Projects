@@ -380,6 +380,7 @@ println(list[1][1]);
 ```java
 int cols = 3;
 int rows = 4;
+int colSum = 0;
 int sum = 0;
 
 int[][] list = new int[cols][rows];
@@ -393,8 +394,11 @@ for (int i = 0; i < cols; i++) {
 for (int i = 0; i < cols; i++) {
   for (int j = 0; j < rows; j++) {
     print(list[i][j] + " ");
+    colSum += list[i][j];
     sum += list[i][j];
   }
+  print("= " + colSum);
+  colSum = 0;
   println();
 }
 
