@@ -351,3 +351,61 @@ void setup() {
 }
 
 ```
+
+## Forløb 10
+```java
+int[][] list = {
+  {1, 2, 3, 4}, // 0
+  {5, 6, 7, 8}  // 1
+};
+
+// println(list[Array nummer][plads nummer]);
+println(list[1][3]);
+// vil printe tallet 8
+```
+1. Opret en 3x3 matrix og find værdien i midten (anden række, anden kolonne).
+
+```java
+int[][] list = {
+  {1, 2, 3 }, // 0
+  {4, 5, 6 }, // 1
+  {7, 8, 9 }  // 2
+};
+
+println(list[1][1]);
+
+```
+2. Opret en 2D matrix med 3 rækker og 4 kolonner, fyld den med tilfældige tal og beregn summen af hver række. Udskriv resultaterne.
+
+```java
+int cols = 3;
+int rows = 4;
+int sum = 0;
+
+int[][] list = new int[cols][rows];
+
+for (int i = 0; i < cols; i++) {
+  for (int j = 0; j < rows; j++) {
+    list[i][j] = int(random(9));
+  }
+}
+
+for (int i = 0; i < cols; i++) {
+  for (int j = 0; j < rows; j++) {
+    print(list[i][j] + " ");
+    sum += list[i][j];
+  }
+  println();
+}
+
+println();
+println("Total sum = " + sum);
+
+```
+3. Opret en 2D matrix, og transponer den, dvs. skift rækker og kolonner. Udskriv både den oprindelige og transponerede matrix
+
+4. Opret to 2D matricer og find en metode der kan sammenligne om de har ens indhold
+
+5. Skriv program der kan multiplicere to matricer
+
+## Forløb 11
