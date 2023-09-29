@@ -413,3 +413,92 @@ println("Total sum = " + sum);
 5. Skriv program der kan multiplicere to matricer
 
 ## Forløb 11
+1. Arbejde med Primitiver: Opret to variabler af typen int og tildel dem samme værdi. Prøv at ændre værdien af den ene variabel og se, hvordan det påvirker den anden.
+```java
+  int var1 = 10;
+  int var2 = var1;
+
+  var1 = 20;
+
+  println("var1: " + var1);
+  println("var2: " + var2);
+```
+
+2. Arbejde med Primitiv Arrays: Opret et primitivt array, f.eks. int[], og tildel det til en anden reference. Prøv at ændre værdierne i det originale array og se, om det påvirker den anden reference.
+```java
+int[] array1 = {1, 2, 3};
+int[] array2 = array1;
+
+array1[0] = 10;
+
+println("array1[0]: " + array1[0]);
+println("array2[0]: " + array2[0]);
+```
+
+3. Arbejde med Arrays: Opret et array af strenge og tildel det til en anden reference. Fjern eller tilføj elementer til det originale array og se, hvordan det påvirker den anden reference.
+```java
+String[] stringArray1 = {"æble", "banana", "pære"};
+String[] stringArray2 = stringArray1;
+
+strArray1 = shorten(strArray1);
+
+println("stringArray1 length: " + stringArray1.length);
+println("stringArray2 length: " + stringArray2.length);
+```
+
+## Forløb 12
+1. Hvad bruges krølle-parenteser til i en funktion (og hvad bruges krølle-parenteser til generelt…)
+- Holde den kode der skal køres når man bruger funktionen.
+
+2. Hvad anvendes almindelige parenteser til i en funktion
+- Det indeholder funktionens parametrer. 
+
+3. Hvad betyder “returtype” og hvor skrives den i en funktion
+- 
+
+4. Hvad er forskellen på c og parametre
+- Argumenter er det du sætter ind i paremetrene.
+
+5. Hvornår er det smart at bruge funktioner
+- Hvis man ved at man skal bruge noget kode flere gange, kan der spares linjer og tid ved at lave det om til en funktions. 
+
+6. Hvad betyder “return” og hvordan anvendes det
+- Return retunere en værdi fra funktionen, her under vil der blive retuneret summen af a og b.
+```java
+int add2num(int a, int b){
+   int resultat = a + b;
+   return resultat;
+}
+```
+
+7. Hvad betyder “void” og hvordan anvendes det
+- Void betyder at man kan sende alle datatyper ind i funktionen.
+
+8. Lav en funktion med navnet “udskriv10”, der kan udskrive 10-tabellen.
+- 
+
+9. Lav en funktion med navnet “gangMed10”, der modtager et tal som parameter og returnere tallet multipliceret med 10
+- 
+
+10. Lav en funktion med navnet “udskrivTabel”, der modtager et tal og udskriver de første 10 tal af den tabel, der svarer til inputtet
+- 
+
+11. Lav en funktion “mult”, der modtager to tal som parametre, og returnere resultatet som er de to tal ganget sammen
+- 
+
+12. Lav en ny funktion med samme navn “mult”, der modtager tre tal som parametre. Den nye funktion skal anvende funktionen fra spørgsmål 2 til at gange 3 tal sammen
+- 
+
+13. (frivillig) Hvad betyder rekursion - prøv at slå det op
+- 
+
+14. (frivillig) Give et eksempel på en funktion, der anvender rekursion. Funktionen skal modtage et tal som parameter og returnere fakultet af tallet. F.eks. beregnes fakultet af 5 således 5! = 5x4x3x2x1
+- 
+
+### Meget svære opgaver i funktioner
+15. Lav en rekursiv funktion “int fib(int t)” der kan retunere et bestemt tal i fibonacci-talrækken. F.eks. fib(6) = 5 og fib(8) = 13.
+https://da.wikipedia.org/wiki/Fibonacci-tal
+https://en.wikipedia.org/wiki/Recursion
+
+16. Lav en anden funktion, som vha. “fib” tegner følgende mønster:
+https://da.wikipedia.org/wiki/Fibonacci-tal#/media/Fil:FibonacciBlocks.svg
