@@ -436,6 +436,7 @@ println("array2[0]: " + array2[0]);
 ```
 
 3. Arbejde med Arrays: Opret et array af strenge og tildel det til en anden reference. Fjern eller tilføj elementer til det originale array og se, hvordan det påvirker den anden reference.
+   
 ```java
 String[] stringArray1 = {"æble", "banana", "pære"};
 String[] stringArray2 = stringArray1;
@@ -451,19 +452,19 @@ println("stringArray2 length: " + stringArray2.length);
 - Holde den kode der skal køres når man bruger funktionen.
 
 2. Hvad anvendes almindelige parenteser til i en funktion
-- Det indeholder funktionens parametrer. 
+- Det indeholder funktionens parametre. 
 
 3. Hvad betyder “returtype” og hvor skrives den i en funktion
-- 
 
 4. Hvad er forskellen på argumenter og parametre
-- Argumenter er det du sætter ind i paremetrene.
+- Argumenter er det du sætter ind i parametrene.
 
 5. Hvornår er det smart at bruge funktioner
 - Hvis man ved at man skal bruge noget kode flere gange, kan der spares linjer og tid ved at lave det om til en funktions. 
 
 6. Hvad betyder “return” og hvordan anvendes det
-- Return retunere en værdi fra funktionen, her under vil der blive retuneret summen af a og b.
+- Return returnere en værdi fra funktionen, her under vil der blive returneret summen af a og b.
+
 ```java
 int add2num(int a, int b){
    int resultat = a + b;
@@ -475,25 +476,12 @@ int add2num(int a, int b){
 - Void betyder at man kan sende alle datatyper ind i funktionen, den behøver heller ikke at retunere nået.
 
 8. Lav en funktion med navnet “udskriv10”, der kan udskrive 10-tabellen.
-- 
-
 9. Lav en funktion med navnet “gangMed10”, der modtager et tal som parameter og returnere tallet multipliceret med 10
-- 
-
 10. Lav en funktion med navnet “udskrivTabel”, der modtager et tal og udskriver de første 10 tal af den tabel, der svarer til inputtet
-- 
-
 11. Lav en funktion “mult”, der modtager to tal som parametre, og returnere resultatet som er de to tal ganget sammen
-- 
-
 12. Lav en ny funktion med samme navn “mult”, der modtager tre tal som parametre. Den nye funktion skal anvende funktionen fra spørgsmål 2 til at gange 3 tal sammen
-- 
-
 13. (frivillig) Hvad betyder rekursion - prøv at slå det op
-- 
-
 14. (frivillig) Give et eksempel på en funktion, der anvender rekursion. Funktionen skal modtage et tal som parameter og returnere fakultet af tallet. F.eks. beregnes fakultet af 5 således 5! = 5x4x3x2x1
-- 
 
 ### Meget svære opgaver i funktioner
 15. Lav en rekursiv funktion “int fib(int t)” der kan retunere et bestemt tal i fibonacci-talrækken. F.eks. fib(6) = 5 og fib(8) = 13.
