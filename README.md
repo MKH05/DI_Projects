@@ -456,7 +456,7 @@ println("stringArray2 length: " + stringArray2.length);
 3. Hvad betyder “returtype” og hvor skrives den i en funktion
 - 
 
-4. Hvad er forskellen på c og parametre
+4. Hvad er forskellen på argumenter og parametre
 - Argumenter er det du sætter ind i paremetrene.
 
 5. Hvornår er det smart at bruge funktioner
@@ -472,7 +472,7 @@ int add2num(int a, int b){
 ```
 
 7. Hvad betyder “void” og hvordan anvendes det
-- Void betyder at man kan sende alle datatyper ind i funktionen.
+- Void betyder at man kan sende alle datatyper ind i funktionen, den behøver heller ikke at retunere nået.
 
 8. Lav en funktion med navnet “udskriv10”, der kan udskrive 10-tabellen.
 - 
