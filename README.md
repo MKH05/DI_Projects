@@ -414,6 +414,7 @@ println("Total sum = " + sum);
 
 ## Forløb 11
 1. Arbejde med Primitiver: Opret to variabler af typen int og tildel dem samme værdi. Prøv at ændre værdien af den ene variabel og se, hvordan det påvirker den anden.
+
 ```java
   int var1 = 10;
   int var2 = var1;
@@ -425,6 +426,7 @@ println("Total sum = " + sum);
 ```
 
 2. Arbejde med Primitiv Arrays: Opret et primitivt array, f.eks. int[], og tildel det til en anden reference. Prøv at ændre værdierne i det originale array og se, om det påvirker den anden reference.
+
 ```java
 int[] array1 = {1, 2, 3};
 int[] array2 = array1;
@@ -455,6 +457,7 @@ println("stringArray2 length: " + stringArray2.length);
 - Det indeholder funktionens parametre. 
 
 3. Hvad betyder “returtype” og hvor skrives den i en funktion
+- 
 
 4. Hvad er forskellen på argumenter og parametre
 - Argumenter er det du sætter ind i parametrene.
@@ -476,17 +479,103 @@ int add2num(int a, int b){
 - Void betyder at man kan sende alle datatyper ind i funktionen, den behøver heller ikke at retunere nået.
 
 8. Lav en funktion med navnet “udskriv10”, der kan udskrive 10-tabellen.
+
+```java
+void udskriv10(){
+  for (int i = 1; i <= 10; i++) {
+    println(i*10);
+  }
+}
+```
 9. Lav en funktion med navnet “gangMed10”, der modtager et tal som parameter og returnere tallet multipliceret med 10
+
+```java
+int mult10(int tal){
+   int resultat = tal * 10;
+   return resultat;
+}
+```
+
 10. Lav en funktion med navnet “udskrivTabel”, der modtager et tal og udskriver de første 10 tal af den tabel, der svarer til inputtet
+
+```java
+void udskrivTabel(int inputTal) {
+  for (int i = 1; i <= 10; i++) {
+    int resultat = inputTal * i;
+    println(resultat);
+  }
+}
+```
+
 11. Lav en funktion “mult”, der modtager to tal som parametre, og returnere resultatet som er de to tal ganget sammen
+
+```java
+int mult(int a, int b){
+   int resultat = a * b;
+   return resultat;
+}
+```
 12. Lav en ny funktion med samme navn “mult”, der modtager tre tal som parametre. Den nye funktion skal anvende funktionen fra spørgsmål 2 til at gange 3 tal sammen
+
 13. (frivillig) Hvad betyder rekursion - prøv at slå det op
+- Det er når en funktion "bruger" så selv.
+
 14. (frivillig) Give et eksempel på en funktion, der anvender rekursion. Funktionen skal modtage et tal som parameter og returnere fakultet af tallet. F.eks. beregnes fakultet af 5 således 5! = 5x4x3x2x1
+
+```java
+int factorial(int tal) {
+  if (tal == 0 || tal == 1) {
+    return 1;
+  } 
+  else {
+    return n * factorial(n - 1);
+  }
+}
+```
 
 ### Meget svære opgaver i funktioner
 15. Lav en rekursiv funktion “int fib(int t)” der kan retunere et bestemt tal i fibonacci-talrækken. F.eks. fib(6) = 5 og fib(8) = 13.
 https://da.wikipedia.org/wiki/Fibonacci-tal
 https://en.wikipedia.org/wiki/Recursion
+```java
+int fib(int tal) {
+    if (tal == 1 || tal <= 0) {
+        return 0;
+    }
+    if (tal == 2) {
+        return 1;
+    }
+    
+    return fib(tal - 1) + fib(tal - 2);
+}
+```
 
 16. Lav en anden funktion, som vha. “fib” tegner følgende mønster:
 https://da.wikipedia.org/wiki/Fibonacci-tal#/media/Fil:FibonacciBlocks.svg
+
+```java
+int fib(int tal) {
+    if (tal == 1 || tal <= 0) {
+        return 0;
+    }
+    if (tal == 2) {
+        return 1;
+    }
+    
+    return fib(tal - 1) + fib(tal - 2);
+}
+
+void setup(){
+    size(500, 500);
+    int size = 0;
+    translate(width/2, height/2);
+    for (int i = 2; i < 15; i++) {
+        size = fib(i)*10;
+        fill(size%360, 0, size%360);
+        println("size: " + size, i, fib(i-1));
+        rect(0, 0, size, size);
+        rotate(HALF_PI);
+        translate(-fib(i-1)*10, 0);
+    }
+}
+```
